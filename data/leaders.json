@@ -1,0 +1,43 @@
+[
+  {
+    "name": "Abigail (Abby) Aidoo",
+    "role": "Programme Director \u00b7 UBC",
+    "origin": "Ghana",
+    "base": "Vancouver, Canada",
+    "bio": "Management accounting and entrepreneurship professional with experience in operations, business development and support for African entrepreneurs. UBC MBA graduate.",
+    "linkedin": "https://ca.linkedin.com/in/abigailaidoo",
+    "photo": "media/leader_abby.jpg",
+    "sources": [
+      "https://mastercardfdn.scholars.ubc.ca/mastercard-foundation-scholars-program-at-ubc/",
+      "https://innovation.ubc.ca/news/june-06-2024/qa-entrepreneurship-abby-aidoo"
+    ],
+    "photo_source_url": "https://impacttoolbox.org/about/"
+  },
+  {
+    "name": "Terry Sunderland",
+    "role": "Academic Director \u00b7 UBC",
+    "origin": "United Kingdom",
+    "base": "Vancouver, Canada",
+    "bio": "Professor of tropical forestry whose research connects forests, biodiversity, food security and livelihoods. His IUFRO award biography identifies the United Kingdom as his birthplace.",
+    "linkedin": "https://ca.linkedin.com/in/terry-sunderland-3b5a93149",
+    "photo": "media/leader_terry.png",
+    "sources": [
+      "https://sunderlandlab.forestry.ubc.ca/people/",
+      "https://www.iufro.org/media/fileadmin/publications/general-publications/iufro-scientific-achievement-award-winners-2024.pdf"
+    ],
+    "photo_source_url": "https://www.iufro.org/media/fileadmin/publications/general-publications/iufro-scientific-achievement-award-winners-2024.pdf#page=112"
+  },
+  {
+    "name": "Adrian Bukenya",
+    "role": "Senior Director \u00b7 Mastercard Foundation Scholars Programs",
+    "origin": "Not yet verified",
+    "base": "Uganda programme leadership",
+    "bio": "Global Scholars Program leader with experience in energy, infrastructure, finance and operations across Africa. His official biography confirms his Uganda country leadership role; it does not state his country of origin.",
+    "linkedin": "",
+    "photo": "media/leader_adrian.png",
+    "sources": [
+      "https://mastercardfdn.org/en/people/adrian-bukenya/"
+    ],
+    "photo_source_url": "https://mastercardfdn.org/en/people/adrian-bukenya/"
+  }
+]

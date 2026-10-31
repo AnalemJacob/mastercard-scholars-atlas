@@ -1,0 +1,1489 @@
+{
+  "ubc2026_032": {
+    "name": "Analem Jacob",
+    "hometown": "Sefwi Dwenasi",
+    "region": "Western North",
+    "source": "UBC 2026 Scholar Journeys — Responses (1).xlsx · final responses supplied 26 October 2026",
+    "status": "confirmed_response",
+    "notes": [
+      "Education stages and reported experiences are shown in survey order; dates were not supplied for every stop.",
+      "Latest of two submissions used. Yaperiga is retained as supplied; its mapped point is representative, not a verified locality."
+    ],
+    "project_status": "Yes",
+    "projects": [
+      {
+        "title": "The Savanna Rural Women Voice",
+        "country": "Ghana",
+        "location": "Tamale",
+        "started": "2022.0",
+        "role": "Team member",
+        "description": "Improving Lives of Rural Women"
+      },
+      {
+        "description": "Improving SWAT with snow is data within the Capilano watershed. British Columbia Canada."
+      }
+    ],
+    "steps": [
+      {
+        "name": "Sefwi Dwenasi",
+        "country_code": "GHA",
+        "coordinates": [
+          -2.48272,
+          6.22059
+        ],
+        "coordinate_source": "https://mapcarta.com/N2188404134",
+        "location_kind": "town",
+        "place_id": "dwenasi",
+        "community_id": "dwenasi",
+        "title": "Hometown",
+        "text": "Sefwi Dwenasi · Western North.",
+        "kind": "hometown",
+        "precision": "Town/city reference point · exact building or venue not verified",
+        "evidence": "Scholar-confirmed response",
+        "source": "",
+        "zoom": 13
+      },
+      {
+        "name": "Sefwi Dwenasi",
+        "country_code": "GHA",
+        "coordinates": [
+          -2.48272,
+          6.22059
+        ],
+        "coordinate_source": "https://mapcarta.com/N2188404134",
+        "location_kind": "town",
+        "place_id": "dwenasi",
+        "community_id": "dwenasi",
+        "title": "Basic school",
+        "text": "Almighty JHS · Sefwi Dwenasi · Ghana.",
+        "kind": "education",
+        "precision": "Town/city reference point · exact building or venue not verified",
+        "evidence": "Scholar-confirmed response",
+        "source": "",
+        "zoom": 13
+      },
+      {
+        "name": "Abuakwa State College, Kibi",
+        "country_code": "GHA",
+        "coordinates": [
+          -0.54357,
+          6.17483
+        ],
+        "coordinate_source": "https://mapcarta.com/W951436606",
+        "location_kind": "facility",
+        "place_id": "abuakwa",
+        "community_id": "kibi",
+        "title": "High school",
+        "text": "Abuakwa State College · Kibi · Ghana.",
+        "kind": "education",
+        "precision": "Mapped school/campus point · representative within the site",
+        "evidence": "Scholar-confirmed response",
+        "source": "",
+        "zoom": 14
+      },
+      {
+        "name": "Former UDS Navrongo campus",
+        "country_code": "GHA",
+        "coordinates": [
+          -1.0776258,
+          10.8663818
+        ],
+        "coordinate_source": "https://gh.near-place.com/university-for-development-studies-navrongo-campus-",
+        "location_kind": "facility",
+        "place_id": "uds-navrongo",
+        "community_id": "navrongo",
+        "title": "Previous university",
+        "text": "University for Development Studies · Navrongo · Ghana.",
+        "kind": "education",
+        "precision": "Mapped school/campus point · representative within the site",
+        "evidence": "Scholar-confirmed response",
+        "source": "",
+        "zoom": 14
+      },
+      {
+        "name": "Burkina Faso representative point",
+        "country_code": "BFA",
+        "coordinates": [
+          -1.36388,
+          12.673048
+        ],
+        "coordinate_source": "https://www.naturalearthdata.com/",
+        "location_kind": "country",
+        "place_id": "burkina-reference",
+        "community_id": "burkina-reference",
+        "title": "Burkina Faso experience",
+        "text": "Yaperiga (as supplied) · work / presented a community project. Locality could not be matched confidently; the marker is a Burkina Faso reference.",
+        "kind": "experience",
+        "precision": "Representative country point · town/venue not supplied or not located",
+        "evidence": "Scholar-confirmed response",
+        "source": "",
+        "zoom": 5
+      },
+      {
+        "name": "Ivory Coast representative point",
+        "country_code": "CIV",
+        "coordinates": [
+          -5.568618,
+          7.49139
+        ],
+        "coordinate_source": "https://www.naturalearthdata.com/",
+        "location_kind": "country",
+        "place_id": "civ-reference",
+        "community_id": "civ-reference",
+        "title": "Côte d’Ivoire experience",
+        "text": "Presented a community project · no town or venue supplied; representative country point.",
+        "kind": "experience",
+        "precision": "Representative country point · town/venue not supplied or not located",
+        "evidence": "Scholar-confirmed response",
+        "source": "",
+        "zoom": 5
+      },
+      {
+        "name": "UBC Vancouver campus",
+        "country_code": "CAN",
+        "coordinates": [
+          -123.246,
+          49.2606
+        ],
+        "coordinate_source": "https://www.ubc.ca/about/maps.html",
+        "location_kind": "facility",
+        "place_id": "ubc",
+        "community_id": "vancouver",
+        "title": "UBC",
+        "text": "University of British Columbia · Vancouver campus · 2026 cohort.",
+        "kind": "ubc",
+        "precision": "Mapped school/campus point · representative within the site",
+        "evidence": "Scholar-confirmed response",
+        "source": "",
+        "zoom": 14
+      }
+    ]
+  },
+  "ubc2026_034": {
+    "name": "John Asamoah Boachie",
+    "hometown": "Ahwiaa",
+    "region": "Ashanti region",
+    "source": "UBC 2026 Scholar Journeys — Responses (1).xlsx · final responses supplied 26 October 2026",
+    "status": "confirmed_response",
+    "notes": [
+      "Education stages and reported experiences are shown in survey order; dates were not supplied for every stop.",
+      "The response selected “No current project” but also supplied project details; those details are retained separately with their reported status."
+    ],
+    "project_status": "No current project",
+    "projects": [
+      {
+        "title": "Estimating aboveground biomass",
+        "country": "Ghana",
+        "location": "Ghana",
+        "started": "2026.0",
+        "role": "Researcher / student researcher",
+        "description": "Aboveground biomass is the total dry weight of all living plant material—such as trees, shrubs, and grasses—found sitting above the soil"
+      }
+    ],
+    "steps": [
+      {
+        "name": "Ahwiaa, Ashanti (Kwabre reference)",
+        "country_code": "GHA",
+        "coordinates": [
+          -1.5959,
+          6.7599
+        ],
+        "coordinate_source": "https://mapcarta.com/Ahwiaa",
+        "location_kind": "area",
+        "place_id": "ahwiaa",
+        "community_id": "ahwiaa",
+        "selection_note": "Multiple Ahwiaa localities exist; this is a representative Ashanti locality point, not a verified hometown match.",
+        "title": "Hometown",
+        "text": "Ahwiaa · Ashanti region.",
+        "kind": "hometown",
+        "precision": "Representative area point · precise locality not verified",
+        "evidence": "Scholar-confirmed response",
+        "source": "",
+        "zoom": 13
+      },
+      {
+        "name": "Manna International School, Bremang, Kumasi",
+        "country_code": "GHA",
+        "coordinates": [
+          -1.63348,
+          6.73471
+        ],
+        "coordinate_source": "https://ghana.worldplaces.me/review/239539863-manna-international-school.html",
+        "location_kind": "facility",
+        "place_id": "manna",
+        "community_id": "kumasi",
+        "title": "Basic school",
+        "text": "Manna International School · Ashanti region · Ghana.",
+        "kind": "education",
+        "precision": "Mapped school/campus point · representative within the site",
+        "evidence": "Scholar-confirmed response",
+        "source": "",
+        "zoom": 14
+      },
+      {
+        "name": "Opoku Ware School, Santasi, Kumasi",
+        "country_code": "GHA",
+        "coordinates": [
+          -1.643894,
+          6.663786
+        ],
+        "coordinate_source": "https://ges.gov.gh/wp-content/uploads/2021/02/Annual-Digest-2020-ecopy.pdf",
+        "location_kind": "facility",
+        "place_id": "opoku",
+        "community_id": "kumasi",
+        "title": "High school",
+        "text": "Opoku Ware School · Ashanti region · Ghana.",
+        "kind": "education",
+        "precision": "Mapped school/campus point · representative within the site",
+        "evidence": "Scholar-confirmed response",
+        "source": "",
+        "zoom": 14
+      },
+      {
+        "name": "KNUST, Kumasi",
+        "country_code": "GHA",
+        "coordinates": [
+          -1.56093,
+          6.67857
+        ],
+        "coordinate_source": "https://mapcarta.com/W378466289",
+        "location_kind": "facility",
+        "place_id": "knust",
+        "community_id": "kumasi",
+        "title": "Previous university",
+        "text": "KNUST · Ashanti region · Ghana.",
+        "kind": "education",
+        "precision": "Mapped school/campus point · representative within the site",
+        "evidence": "Scholar-confirmed response",
+        "source": "",
+        "zoom": 14
+      },
+      {
+        "name": "UBC Vancouver campus",
+        "country_code": "CAN",
+        "coordinates": [
+          -123.246,
+          49.2606
+        ],
+        "coordinate_source": "https://www.ubc.ca/about/maps.html",
+        "location_kind": "facility",
+        "place_id": "ubc",
+        "community_id": "vancouver",
+        "title": "UBC",
+        "text": "University of British Columbia · Vancouver campus · 2026 cohort.",
+        "kind": "ubc",
+        "precision": "Mapped school/campus point · representative within the site",
+        "evidence": "Scholar-confirmed response",
+        "source": "",
+        "zoom": 14
+      }
+    ]
+  },
+  "ubc2026_007": {
+    "name": "Linda Arthur",
+    "hometown": "New Ebu",
+    "region": "Central Region",
+    "source": "UBC 2026 Scholar Journeys — Responses (1).xlsx · final responses supplied 26 October 2026",
+    "status": "confirmed_response",
+    "notes": [
+      "Education stages and reported experiences are shown in survey order; dates were not supplied for every stop."
+    ],
+    "project_status": "No current project",
+    "projects": [],
+    "steps": [
+      {
+        "name": "New Ebu",
+        "country_code": "GHA",
+        "coordinates": [
+          -1.23238,
+          5.22879
+        ],
+        "coordinate_source": "https://mapcarta.com/N12640815200",
+        "location_kind": "town",
+        "place_id": "new-ebu",
+        "community_id": "new-ebu",
+        "title": "Hometown",
+        "text": "New Ebu · Central Region.",
+        "kind": "hometown",
+        "precision": "Town/city reference point · exact building or venue not verified",
+        "evidence": "Scholar-confirmed response",
+        "source": "",
+        "zoom": 13
+      },
+      {
+        "name": "Rhema Salvation Preparatory and JHS, Ayeduase",
+        "country_code": "GHA",
+        "coordinates": [
+          -1.55197,
+          6.67431
+        ],
+        "coordinate_source": "https://mapcarta.com/W568778991",
+        "location_kind": "facility",
+        "place_id": "rhema",
+        "community_id": "ayeduase",
+        "title": "Basic school",
+        "text": "Rhema Salvation preparatory school · Ayeduase, Ashanti Region · Ghana.",
+        "kind": "education",
+        "precision": "Mapped school/campus point · representative within the site",
+        "evidence": "Scholar-confirmed response",
+        "source": "",
+        "zoom": 14
+      },
+      {
+        "name": "Tweneboa Kodua SHS, Kumawu",
+        "country_code": "GHA",
+        "coordinates": [
+          -1.27971,
+          6.91697
+        ],
+        "coordinate_source": "https://mapcarta.com/W293557987",
+        "location_kind": "facility",
+        "place_id": "tweneboa",
+        "community_id": "kumawu",
+        "title": "High school",
+        "text": "Tweneboa Kodua SHS · Kumawu, Ashanti Region · Ghana.",
+        "kind": "education",
+        "precision": "Mapped school/campus point · representative within the site",
+        "evidence": "Scholar-confirmed response",
+        "source": "",
+        "zoom": 14
+      },
+      {
+        "name": "Ashesi University, Berekuso",
+        "country_code": "GHA",
+        "coordinates": [
+          -0.21972,
+          5.75972
+        ],
+        "coordinate_source": "https://en.wikipedia.org/wiki/Ashesi_University",
+        "location_kind": "facility",
+        "place_id": "ashesi",
+        "community_id": "berekuso",
+        "title": "Previous university",
+        "text": "Ashesi University · Berekuso, Eastern Region · Ghana.",
+        "kind": "education",
+        "precision": "Mapped school/campus point · representative within the site",
+        "evidence": "Scholar-confirmed response",
+        "source": "",
+        "zoom": 14
+      },
+      {
+        "name": "Nairobi",
+        "country_code": "KEN",
+        "coordinates": [
+          36.82,
+          -1.28
+        ],
+        "coordinate_source": "https://ungegn.un.org/dashboard/cities/details?id=26",
+        "location_kind": "town",
+        "place_id": "nairobi",
+        "community_id": "nairobi",
+        "title": "Conference · Kenya",
+        "text": "Data Festival · Nairobi, Kenya. Venue not supplied.",
+        "kind": "experience",
+        "precision": "Town/city reference point · exact building or venue not verified",
+        "evidence": "Scholar-confirmed response",
+        "source": "",
+        "zoom": 13
+      },
+      {
+        "name": "Gaborone",
+        "country_code": "BWA",
+        "coordinates": [
+          25.90859,
+          -24.65451
+        ],
+        "coordinate_source": "https://www.geodatos.net/en/coordinates/botswana/gaborone",
+        "location_kind": "town",
+        "place_id": "gaborone",
+        "community_id": "gaborone",
+        "title": "Conference · Botswana",
+        "text": "ACM Conference · Gaborone, Botswana. Venue not supplied.",
+        "kind": "experience",
+        "precision": "Town/city reference point · exact building or venue not verified",
+        "evidence": "Scholar-confirmed response",
+        "source": "",
+        "zoom": 13
+      },
+      {
+        "name": "Jena",
+        "country_code": "DEU",
+        "coordinates": [
+          11.5899,
+          50.9288
+        ],
+        "coordinate_source": "https://mapcarta.com/18135766",
+        "location_kind": "town",
+        "place_id": "jena",
+        "community_id": "jena",
+        "title": "Conference · Germany",
+        "text": "GCC · Jena, Germany. Venue not supplied.",
+        "kind": "experience",
+        "precision": "Town/city reference point · exact building or venue not verified",
+        "evidence": "Scholar-confirmed response",
+        "source": "",
+        "zoom": 13
+      },
+      {
+        "name": "UBC Vancouver campus",
+        "country_code": "CAN",
+        "coordinates": [
+          -123.246,
+          49.2606
+        ],
+        "coordinate_source": "https://www.ubc.ca/about/maps.html",
+        "location_kind": "facility",
+        "place_id": "ubc",
+        "community_id": "vancouver",
+        "title": "UBC",
+        "text": "University of British Columbia · Vancouver campus · 2026 cohort.",
+        "kind": "ubc",
+        "precision": "Mapped school/campus point · representative within the site",
+        "evidence": "Scholar-confirmed response",
+        "source": "",
+        "zoom": 14
+      }
+    ]
+  },
+  "ubc2026_028": {
+    "name": "Amamata Tanko",
+    "hometown": "Bolgatanga",
+    "region": "Upper East",
+    "source": "UBC 2026 Scholar Journeys — Responses (1).xlsx · final responses supplied 26 October 2026",
+    "status": "confirmed_response",
+    "notes": [
+      "Education stages and reported experiences are shown in survey order; dates were not supplied for every stop."
+    ],
+    "project_status": "Yes",
+    "projects": [
+      {
+        "title": "GhanaFlux Progress in Monitoring the Tropical African Carbon Sequestration",
+        "country": "Ghana",
+        "location": "Bia Tano Forest Reserve",
+        "started": "2026.0",
+        "role": "Researcher / student researcher",
+        "description": "Assessing the progress made since the installation of the GhanaFlux"
+      }
+    ],
+    "steps": [
+      {
+        "name": "Bolgatanga",
+        "country_code": "GHA",
+        "coordinates": [
+          -0.8514,
+          10.7856
+        ],
+        "coordinate_source": "https://www.distancecalculator.net/from-bolgatanga-to-sunyani",
+        "location_kind": "town",
+        "place_id": "bolga",
+        "community_id": "bolga",
+        "title": "Hometown",
+        "text": "Bolgatanga · Upper East.",
+        "kind": "hometown",
+        "precision": "Town/city reference point · exact building or venue not verified",
+        "evidence": "Scholar-confirmed response",
+        "source": "",
+        "zoom": 13
+      },
+      {
+        "name": "Bolgatanga",
+        "country_code": "GHA",
+        "coordinates": [
+          -0.8514,
+          10.7856
+        ],
+        "coordinate_source": "https://www.distancecalculator.net/from-bolgatanga-to-sunyani",
+        "location_kind": "town",
+        "place_id": "bolga",
+        "community_id": "bolga",
+        "title": "Basic school",
+        "text": "Great Victory Academy · Bolgatanga, Upper East · Ghana.",
+        "kind": "education",
+        "precision": "Town/city reference point · exact building or venue not verified",
+        "evidence": "Scholar-confirmed response",
+        "source": "",
+        "zoom": 13
+      },
+      {
+        "name": "Jirapa",
+        "country_code": "GHA",
+        "coordinates": [
+          -2.7,
+          10.533
+        ],
+        "coordinate_source": "https://en.wikipedia.org/wiki/Jirapa,_Ghana",
+        "location_kind": "town",
+        "place_id": "jirapa",
+        "community_id": "jirapa",
+        "title": "High school",
+        "text": "St Francis Girls SHS · Jirapa, Upper West Region · Ghana.",
+        "kind": "education",
+        "precision": "Town/city reference point · exact building or venue not verified",
+        "evidence": "Scholar-confirmed response",
+        "source": "",
+        "zoom": 13
+      },
+      {
+        "name": "University of Energy and Natural Resources, Sunyani",
+        "country_code": "GHA",
+        "coordinates": [
+          -2.34166,
+          7.34852
+        ],
+        "coordinate_source": "https://mapcarta.com/W427747434",
+        "location_kind": "facility",
+        "place_id": "uenr",
+        "community_id": "sunyani",
+        "title": "Previous university",
+        "text": "University of Energy and Natural Resources · Sunyani, Bono Region · Ghana.",
+        "kind": "education",
+        "precision": "Mapped school/campus point · representative within the site",
+        "evidence": "Scholar-confirmed response",
+        "source": "",
+        "zoom": 14
+      },
+      {
+        "name": "University of Energy and Natural Resources, Sunyani",
+        "country_code": "GHA",
+        "coordinates": [
+          -2.34166,
+          7.34852
+        ],
+        "coordinate_source": "https://mapcarta.com/W427747434",
+        "location_kind": "facility",
+        "place_id": "uenr",
+        "community_id": "sunyani",
+        "title": "Teaching experience",
+        "text": "Teaching Assistant · University of Energy and Natural Resources · Sunyani, Ghana.",
+        "kind": "experience",
+        "precision": "Mapped school/campus point · representative within the site",
+        "evidence": "Scholar-confirmed response",
+        "source": "",
+        "zoom": 14
+      },
+      {
+        "name": "Accra",
+        "country_code": "GHA",
+        "coordinates": [
+          -0.1969,
+          5.55602
+        ],
+        "coordinate_source": "https://www.geodatos.net/en/coordinates/ghana/accra",
+        "location_kind": "town",
+        "place_id": "accra",
+        "community_id": "accra",
+        "title": "Conference experience",
+        "text": "Accra, Greater Accra Region · presented on the impact of dust and meningitis disease. Venue not supplied.",
+        "kind": "experience",
+        "precision": "Town/city reference point · exact building or venue not verified",
+        "evidence": "Scholar-confirmed response",
+        "source": "",
+        "zoom": 13
+      },
+      {
+        "name": "UBC Vancouver campus",
+        "country_code": "CAN",
+        "coordinates": [
+          -123.246,
+          49.2606
+        ],
+        "coordinate_source": "https://www.ubc.ca/about/maps.html",
+        "location_kind": "facility",
+        "place_id": "ubc",
+        "community_id": "vancouver",
+        "title": "UBC",
+        "text": "University of British Columbia · Vancouver campus · 2026 cohort.",
+        "kind": "ubc",
+        "precision": "Mapped school/campus point · representative within the site",
+        "evidence": "Scholar-confirmed response",
+        "source": "",
+        "zoom": 14
+      }
+    ]
+  },
+  "ubc2026_005": {
+    "name": "Jerry John Doviavu",
+    "hometown": "Anloga",
+    "region": "Volta",
+    "source": "UBC 2026 Scholar Journeys — Responses (1).xlsx · final responses supplied 26 October 2026",
+    "status": "confirmed_response",
+    "notes": [
+      "Education stages and reported experiences are shown in survey order; dates were not supplied for every stop.",
+      "Additional colleges and experiences retain the reported order; this is not a dated itinerary."
+    ],
+    "project_status": "Yes",
+    "projects": [
+      {
+        "title": "Tomorrow's Succeeding Youths",
+        "country": "Ghana",
+        "location": "Aflao",
+        "started": "2021.0",
+        "role": "Project lead / coordinator",
+        "description": "Equipping youths with Entrepreneurship"
+      },
+      {
+        "description": "Waste Recycling"
+      }
+    ],
+    "steps": [
+      {
+        "name": "Anloga",
+        "country_code": "GHA",
+        "coordinates": [
+          0.89728,
+          5.79473
+        ],
+        "coordinate_source": "https://www.geodatos.net/en/coordinates/ghana/anloga",
+        "location_kind": "town",
+        "place_id": "anloga",
+        "community_id": "anloga",
+        "title": "Hometown",
+        "text": "Anloga · Volta.",
+        "kind": "hometown",
+        "precision": "Town/city reference point · exact building or venue not verified",
+        "evidence": "Scholar-confirmed response",
+        "source": "",
+        "zoom": 13
+      },
+      {
+        "name": "Anloga",
+        "country_code": "GHA",
+        "coordinates": [
+          0.89728,
+          5.79473
+        ],
+        "coordinate_source": "https://www.geodatos.net/en/coordinates/ghana/anloga",
+        "location_kind": "town",
+        "place_id": "anloga",
+        "community_id": "anloga",
+        "title": "Basic school",
+        "text": "Anloga Avete DA Basic School · Anloga · Ghana.",
+        "kind": "education",
+        "precision": "Town/city reference point · exact building or venue not verified",
+        "evidence": "Scholar-confirmed response",
+        "source": "",
+        "zoom": 13
+      },
+      {
+        "name": "Ashaiman Senior High School",
+        "country_code": "GHA",
+        "coordinates": [
+          -0.01849,
+          5.69634
+        ],
+        "coordinate_source": "https://mapcarta.com/W422190059",
+        "location_kind": "facility",
+        "place_id": "ashaiman-shs",
+        "community_id": "ashaiman",
+        "title": "High school",
+        "text": "Ashaiman Seniors High School · Ashaiman · Ghana.",
+        "kind": "education",
+        "precision": "Mapped school/campus point · representative within the site",
+        "evidence": "Scholar-confirmed response",
+        "source": "",
+        "zoom": 14
+      },
+      {
+        "name": "University of Education, Winneba (North campus reference)",
+        "country_code": "GHA",
+        "coordinates": [
+          -0.62838,
+          5.37127
+        ],
+        "coordinate_source": "https://mapcarta.com/W687120136",
+        "location_kind": "facility",
+        "place_id": "uew",
+        "community_id": "winneba",
+        "selection_note": "A mapped campus reference; the response does not specify a campus.",
+        "title": "Previous university",
+        "text": "University of Education Winneba · Winneba · Ghana.",
+        "kind": "education",
+        "precision": "Mapped school/campus point · representative within the site",
+        "evidence": "Scholar-confirmed response",
+        "source": "",
+        "zoom": 14
+      },
+      {
+        "name": "Copenhagen",
+        "country_code": "DNK",
+        "coordinates": [
+          12.5701,
+          55.6867
+        ],
+        "coordinate_source": "https://mapcarta.com/Copenhagen",
+        "location_kind": "town",
+        "place_id": "copenhagen",
+        "community_id": "copenhagen",
+        "title": "Additional university",
+        "text": "University College Copenhagen · Copenhagen, Denmark. Campus not specified.",
+        "kind": "education",
+        "precision": "Town/city reference point · exact building or venue not verified",
+        "evidence": "Scholar-confirmed response",
+        "source": "",
+        "zoom": 13
+      },
+      {
+        "name": "Akatsi College of Education",
+        "country_code": "GHA",
+        "coordinates": [
+          0.80051,
+          6.12529
+        ],
+        "coordinate_source": "https://mapcarta.com/W356831050",
+        "location_kind": "facility",
+        "place_id": "akatsi-college",
+        "community_id": "akatsi",
+        "title": "Additional college",
+        "text": "Akatsi College of Education · Akatsi, Ghana.",
+        "kind": "education",
+        "precision": "Mapped school/campus point · representative within the site",
+        "evidence": "Scholar-confirmed response",
+        "source": "",
+        "zoom": 14
+      },
+      {
+        "name": "Copenhagen",
+        "country_code": "DNK",
+        "coordinates": [
+          12.5701,
+          55.6867
+        ],
+        "coordinate_source": "https://mapcarta.com/Copenhagen",
+        "location_kind": "town",
+        "place_id": "copenhagen",
+        "community_id": "copenhagen",
+        "title": "Exchange · Denmark",
+        "text": "Erasmus Exchange Program · Copenhagen, Denmark. Venue/campus not specified.",
+        "kind": "experience",
+        "precision": "Town/city reference point · exact building or venue not verified",
+        "evidence": "Scholar-confirmed response",
+        "source": "",
+        "zoom": 13
+      },
+      {
+        "name": "Malmö",
+        "country_code": "SWE",
+        "coordinates": [
+          13.00073,
+          55.60587
+        ],
+        "coordinate_source": "https://www.geodatos.net/en/coordinates/sweden/malmo",
+        "location_kind": "town",
+        "place_id": "malmo",
+        "community_id": "malmo",
+        "title": "Exchange · Sweden",
+        "text": "Erasmus Exchange · Malmö, Sweden.",
+        "kind": "experience",
+        "precision": "Town/city reference point · exact building or venue not verified",
+        "evidence": "Scholar-confirmed response",
+        "source": "",
+        "zoom": 13
+      },
+      {
+        "name": "Hamburg",
+        "country_code": "DEU",
+        "coordinates": [
+          10.0013,
+          53.5502
+        ],
+        "coordinate_source": "https://mapcarta.com/Hamburg",
+        "location_kind": "town",
+        "place_id": "hamburg",
+        "community_id": "hamburg",
+        "title": "Visit · Germany",
+        "text": "Hamburg, Germany.",
+        "kind": "experience",
+        "precision": "Town/city reference point · exact building or venue not verified",
+        "evidence": "Scholar-confirmed response",
+        "source": "",
+        "zoom": 13
+      },
+      {
+        "name": "Amsterdam",
+        "country_code": "NLD",
+        "coordinates": [
+          4.8917,
+          52.3732
+        ],
+        "coordinate_source": "https://mapcarta.com/Amsterdam",
+        "location_kind": "town",
+        "place_id": "amsterdam",
+        "community_id": "amsterdam",
+        "title": "Visit · Netherlands",
+        "text": "Amsterdam, Netherlands.",
+        "kind": "experience",
+        "precision": "Town/city reference point · exact building or venue not verified",
+        "evidence": "Scholar-confirmed response",
+        "source": "",
+        "zoom": 13
+      },
+      {
+        "name": "UBC Vancouver campus",
+        "country_code": "CAN",
+        "coordinates": [
+          -123.246,
+          49.2606
+        ],
+        "coordinate_source": "https://www.ubc.ca/about/maps.html",
+        "location_kind": "facility",
+        "place_id": "ubc",
+        "community_id": "vancouver",
+        "title": "UBC",
+        "text": "University of British Columbia · Vancouver campus · 2026 cohort.",
+        "kind": "ubc",
+        "precision": "Mapped school/campus point · representative within the site",
+        "evidence": "Scholar-confirmed response",
+        "source": "",
+        "zoom": 14
+      }
+    ]
+  },
+  "ubc2026_025": {
+    "name": "Abubakarr Barrie",
+    "hometown": "Freetown",
+    "region": "Not Applicable",
+    "source": "UBC 2026 Scholar Journeys — Responses (1).xlsx · final responses supplied 26 October 2026",
+    "status": "confirmed_response",
+    "notes": [
+      "Education stages and reported experiences are shown in survey order; dates were not supplied for every stop."
+    ],
+    "project_status": "Yes",
+    "projects": [
+      {
+        "title": "Nature for Mangroves",
+        "country": "Sierra Leone",
+        "location": "Freetown",
+        "started": "2022.0",
+        "role": "Founder / co-founder",
+        "description": "We are restoring and conservaering degraded mangrove forests ecosystem across coastal communities in Freetown, and also providing alternative livelihood for these communities."
+      }
+    ],
+    "steps": [
+      {
+        "name": "Freetown",
+        "country_code": "SLE",
+        "coordinates": [
+          -13.268,
+          8.479
+        ],
+        "coordinate_source": "https://mapcarta.com/Freetown",
+        "location_kind": "town",
+        "place_id": "freetown",
+        "community_id": "freetown",
+        "title": "Hometown",
+        "text": "Freetown · Not Applicable.",
+        "kind": "hometown",
+        "precision": "Town/city reference point · exact building or venue not verified",
+        "evidence": "Scholar-confirmed response",
+        "source": "",
+        "zoom": 13
+      },
+      {
+        "name": "Freetown",
+        "country_code": "SLE",
+        "coordinates": [
+          -13.268,
+          8.479
+        ],
+        "coordinate_source": "https://mapcarta.com/Freetown",
+        "location_kind": "town",
+        "place_id": "freetown",
+        "community_id": "freetown",
+        "title": "Basic school",
+        "text": "Lady Patricia Kabba Memorial Primary School · Freetown · Sierra Leone.",
+        "kind": "education",
+        "precision": "Town/city reference point · exact building or venue not verified",
+        "evidence": "Scholar-confirmed response",
+        "source": "",
+        "zoom": 13
+      },
+      {
+        "name": "Freetown",
+        "country_code": "SLE",
+        "coordinates": [
+          -13.268,
+          8.479
+        ],
+        "coordinate_source": "https://mapcarta.com/Freetown",
+        "location_kind": "town",
+        "place_id": "freetown",
+        "community_id": "freetown",
+        "title": "High school",
+        "text": "St. Edward's Secondary School · Freetown · Sierra Leone.",
+        "kind": "education",
+        "precision": "Town/city reference point · exact building or venue not verified",
+        "evidence": "Scholar-confirmed response",
+        "source": "",
+        "zoom": 13
+      },
+      {
+        "name": "African Leadership University Rwanda",
+        "country_code": "RWA",
+        "coordinates": [
+          30.15276,
+          -1.93132
+        ],
+        "coordinate_source": "https://mapcarta.com/W891369684",
+        "location_kind": "facility",
+        "place_id": "alu",
+        "community_id": "kigali",
+        "title": "Previous university",
+        "text": "African Leadership University · Kigali · Rwanda.",
+        "kind": "education",
+        "precision": "Mapped school/campus point · representative within the site",
+        "evidence": "Scholar-confirmed response",
+        "source": "",
+        "zoom": 14
+      },
+      {
+        "name": "UBC Vancouver campus",
+        "country_code": "CAN",
+        "coordinates": [
+          -123.246,
+          49.2606
+        ],
+        "coordinate_source": "https://www.ubc.ca/about/maps.html",
+        "location_kind": "facility",
+        "place_id": "ubc",
+        "community_id": "vancouver",
+        "title": "UBC",
+        "text": "University of British Columbia · Vancouver campus · 2026 cohort.",
+        "kind": "ubc",
+        "precision": "Mapped school/campus point · representative within the site",
+        "evidence": "Scholar-confirmed response",
+        "source": "",
+        "zoom": 14
+      }
+    ]
+  },
+  "ubc2026_029": {
+    "name": "Relindis Fru Akwanwi",
+    "hometown": "Bamenda",
+    "region": "North West Region Cameroon",
+    "source": "UBC 2026 Scholar Journeys — Responses (1).xlsx · final responses supplied 26 October 2026",
+    "status": "confirmed_response",
+    "notes": [
+      "Education stages and reported experiences are shown in survey order; dates were not supplied for every stop."
+    ],
+    "project_status": "Yes",
+    "projects": [
+      {
+        "title": "Evolution of Land Use and Forest cover and it's effects on core Wildlife habitats: Case of Dom Community Forest",
+        "country": "Cameroon",
+        "location": "North West Region Cameroon",
+        "started": "2026.0",
+        "role": "Researcher / student researcher",
+        "description": "Evaluating the impact of land use and forest cover change since 2006 and the effects it has had on the wildlife available in that area"
+      }
+    ],
+    "steps": [
+      {
+        "name": "Bamenda",
+        "country_code": "CMR",
+        "coordinates": [
+          10.1517,
+          5.9614
+        ],
+        "coordinate_source": "https://mapcarta.com/Bamenda",
+        "location_kind": "town",
+        "place_id": "bamenda",
+        "community_id": "bamenda",
+        "title": "Hometown",
+        "text": "Bamenda · North West Region Cameroon.",
+        "kind": "hometown",
+        "precision": "Town/city reference point · exact building or venue not verified",
+        "evidence": "Scholar-confirmed response",
+        "source": "",
+        "zoom": 13
+      },
+      {
+        "name": "Bafut",
+        "country_code": "CMR",
+        "coordinates": [
+          10.11395,
+          6.09072
+        ],
+        "coordinate_source": "https://mapcarta.com/16816050",
+        "location_kind": "town",
+        "place_id": "bafut",
+        "community_id": "bafut",
+        "title": "Basic school",
+        "text": "Government School · Bafut, North West Region · Cameroon.",
+        "kind": "education",
+        "precision": "Town/city reference point · exact building or venue not verified",
+        "evidence": "Scholar-confirmed response",
+        "source": "",
+        "zoom": 13
+      },
+      {
+        "name": "Bafut",
+        "country_code": "CMR",
+        "coordinates": [
+          10.11395,
+          6.09072
+        ],
+        "coordinate_source": "https://mapcarta.com/16816050",
+        "location_kind": "town",
+        "place_id": "bafut",
+        "community_id": "bafut",
+        "title": "High school",
+        "text": "Government Bilingual Secondary School, Bafut, North West Region, Cameroon.",
+        "kind": "education",
+        "precision": "Town/city reference point · exact building or venue not verified",
+        "evidence": "Scholar-confirmed response",
+        "source": "",
+        "zoom": 13
+      },
+      {
+        "name": "Yaoundé",
+        "country_code": "CMR",
+        "coordinates": [
+          11.5213,
+          3.869
+        ],
+        "coordinate_source": "https://mapcarta.com/Yaound%C3%A9",
+        "location_kind": "town",
+        "place_id": "yaounde",
+        "community_id": "yaounde",
+        "title": "Additional high school",
+        "text": "College Polyvalent MCD · Yaoundé, Centre Region, Cameroon.",
+        "kind": "education",
+        "precision": "Town/city reference point · exact building or venue not verified",
+        "evidence": "Scholar-confirmed response",
+        "source": "",
+        "zoom": 13
+      },
+      {
+        "name": "Bambili",
+        "country_code": "CMR",
+        "coordinates": [
+          10.25733,
+          6.00433
+        ],
+        "coordinate_source": "https://mapcarta.com/16815668",
+        "location_kind": "town",
+        "place_id": "bambili",
+        "community_id": "bambili",
+        "title": "Previous university",
+        "text": "The University of Bamenda · Bambili, North West Region · Cameroon.",
+        "kind": "education",
+        "precision": "Town/city reference point · exact building or venue not verified",
+        "evidence": "Scholar-confirmed response",
+        "source": "",
+        "zoom": 13
+      },
+      {
+        "name": "Yaoundé",
+        "country_code": "CMR",
+        "coordinates": [
+          11.5213,
+          3.869
+        ],
+        "coordinate_source": "https://mapcarta.com/Yaound%C3%A9",
+        "location_kind": "town",
+        "place_id": "yaounde",
+        "community_id": "yaounde",
+        "title": "Teaching experience",
+        "text": "High school teacher · Yaoundé · taught Biology, Chemistry, Human Biology, Food Science and Nutrition.",
+        "kind": "experience",
+        "precision": "Town/city reference point · exact building or venue not verified",
+        "evidence": "Scholar-confirmed response",
+        "source": "",
+        "zoom": 13
+      },
+      {
+        "name": "Bamenda",
+        "country_code": "CMR",
+        "coordinates": [
+          10.1517,
+          5.9614
+        ],
+        "coordinate_source": "https://mapcarta.com/Bamenda",
+        "location_kind": "town",
+        "place_id": "bamenda",
+        "community_id": "bamenda",
+        "title": "Volunteering",
+        "text": "Lead research volunteer · Bamenda · created seven environmental clubs in secondary schools and opened one community nursery.",
+        "kind": "experience",
+        "precision": "Town/city reference point · exact building or venue not verified",
+        "evidence": "Scholar-confirmed response",
+        "source": "",
+        "zoom": 13
+      },
+      {
+        "name": "Yaoundé",
+        "country_code": "CMR",
+        "coordinates": [
+          11.5213,
+          3.869
+        ],
+        "coordinate_source": "https://mapcarta.com/Yaound%C3%A9",
+        "location_kind": "town",
+        "place_id": "yaounde",
+        "community_id": "yaounde",
+        "title": "Conference",
+        "text": "Cameroon Youth Economic Forum · Yaoundé · presented on the importance of youth to the economy.",
+        "kind": "experience",
+        "precision": "Town/city reference point · exact building or venue not verified",
+        "evidence": "Scholar-confirmed response",
+        "source": "",
+        "zoom": 13
+      },
+      {
+        "name": "UBC Vancouver campus",
+        "country_code": "CAN",
+        "coordinates": [
+          -123.246,
+          49.2606
+        ],
+        "coordinate_source": "https://www.ubc.ca/about/maps.html",
+        "location_kind": "facility",
+        "place_id": "ubc",
+        "community_id": "vancouver",
+        "title": "UBC",
+        "text": "University of British Columbia · Vancouver campus · 2026 cohort.",
+        "kind": "ubc",
+        "precision": "Mapped school/campus point · representative within the site",
+        "evidence": "Scholar-confirmed response",
+        "source": "",
+        "zoom": 14
+      }
+    ]
+  },
+  "ubc2026_041": {
+    "name": "Millicent Adjubi",
+    "hometown": "Akim Adwafo_Akim Oda",
+    "region": "Eastern Region",
+    "source": "UBC 2026 Scholar Journeys — Responses (1).xlsx · final responses supplied 26 October 2026",
+    "status": "confirmed_response",
+    "notes": [
+      "Education stages and reported experiences are shown in survey order; dates were not supplied for every stop.",
+      "The response selected “No current project” but also supplied project details; those details are retained separately with their reported status."
+    ],
+    "project_status": "No current project",
+    "projects": [
+      {
+        "title": "Soil Microbiome analysis",
+        "country": "Canada",
+        "location": "UBC farm",
+        "started": "2026.0",
+        "role": "Researcher / student researcher",
+        "description": "Soil health"
+      }
+    ],
+    "steps": [
+      {
+        "name": "Adwafo, Akyemansa",
+        "country_code": "GHA",
+        "coordinates": [
+          -1.04788,
+          6.19211
+        ],
+        "coordinate_source": "https://mapcarta.com/N8986166232",
+        "location_kind": "town",
+        "place_id": "adwafo",
+        "community_id": "adwafo",
+        "title": "Hometown",
+        "text": "Akim Adwafo_Akim Oda · Eastern Region.",
+        "kind": "hometown",
+        "precision": "Town/city reference point · exact building or venue not verified",
+        "evidence": "Scholar-confirmed response",
+        "source": "",
+        "zoom": 13
+      },
+      {
+        "name": "Akokoaso, Eastern Region",
+        "country_code": "GHA",
+        "coordinates": [
+          -1.05589,
+          6.15114
+        ],
+        "coordinate_source": "https://mapcarta.com/16955966",
+        "location_kind": "town",
+        "place_id": "akokoaso",
+        "community_id": "akokoaso",
+        "title": "Basic school",
+        "text": "St. Mary's Academy · Akim Akokoaso/Eastern Region · Ghana.",
+        "kind": "education",
+        "precision": "Town/city reference point · exact building or venue not verified",
+        "evidence": "Scholar-confirmed response",
+        "source": "",
+        "zoom": 13
+      },
+      {
+        "name": "Attafuah Senior High/Technical School, Akim Oda",
+        "country_code": "GHA",
+        "coordinates": [
+          -0.99325,
+          5.91653
+        ],
+        "coordinate_source": "https://mapcarta.com/W713943562",
+        "location_kind": "facility",
+        "place_id": "attafuah",
+        "community_id": "akim-oda",
+        "title": "High school",
+        "text": "Attafuah Senior High Technical School · Akim Oda/Eastern Region · Ghana.",
+        "kind": "education",
+        "precision": "Mapped school/campus point · representative within the site",
+        "evidence": "Scholar-confirmed response",
+        "source": "",
+        "zoom": 14
+      },
+      {
+        "name": "KNUST, Kumasi",
+        "country_code": "GHA",
+        "coordinates": [
+          -1.56093,
+          6.67857
+        ],
+        "coordinate_source": "https://mapcarta.com/W378466289",
+        "location_kind": "facility",
+        "place_id": "knust",
+        "community_id": "kumasi",
+        "title": "Previous university",
+        "text": "Kwame Nkrumah University of Science and Technology · Kumasi/Ashanti Region · Ghana.",
+        "kind": "education",
+        "precision": "Mapped school/campus point · representative within the site",
+        "evidence": "Scholar-confirmed response",
+        "source": "",
+        "zoom": 14
+      },
+      {
+        "name": "UBC Vancouver campus",
+        "country_code": "CAN",
+        "coordinates": [
+          -123.246,
+          49.2606
+        ],
+        "coordinate_source": "https://www.ubc.ca/about/maps.html",
+        "location_kind": "facility",
+        "place_id": "ubc",
+        "community_id": "vancouver",
+        "title": "UBC",
+        "text": "University of British Columbia · Vancouver campus · 2026 cohort.",
+        "kind": "ubc",
+        "precision": "Mapped school/campus point · representative within the site",
+        "evidence": "Scholar-confirmed response",
+        "source": "",
+        "zoom": 14
+      }
+    ]
+  },
+  "ubc2026_035": {
+    "name": "Faith Adeniyi",
+    "hometown": "Osogbo",
+    "region": "Osun state",
+    "source": "UBC 2026 Scholar Journeys — Responses (1).xlsx · final responses supplied 26 October 2026",
+    "status": "confirmed_response",
+    "notes": [
+      "Education stages and reported experiences are shown in survey order; dates were not supplied for every stop.",
+      "The identical Port Harcourt cleanup entry was listed twice and is represented once. Distinct activities in the same place remain separate chapters without another flight."
+    ],
+    "project_status": "Yes",
+    "projects": [
+      {
+        "title": "Assessing Relationships Between Tidal-Channel Networks, Hydrological Conditions, and Mangrove Landscape Structure in Maromandia, Madagascar (2015–2025)",
+        "country": "Madagascar",
+        "location": "Moromandia",
+        "started": "2026.0",
+        "role": "Researcher / student researcher",
+        "description": "My project examines how changes in tidal-channel networks and hydrological conditions relate to changes in mangrove landscape structure in Maromandia, Madagascar, between 2015 and 2025. I will use satellite imagery and existing mangrove maps to investigate these relationships."
+      },
+      {
+        "description": "Community Conversations — UBC Sustainability Ambassadors Experiential Cohort | Canada | Marpole, South Vancouver | 2026 | I help facilitate intergenerational conversations with youth and seniors at Marpole-Oakridge Family Place on climate change, health, affordability, and community connection. I support community mapping, collect participant feedback, and contribute to Community Action Plan to strengthen social connections and community resilience."
+      }
+    ],
+    "steps": [
+      {
+        "name": "Osogbo",
+        "country_code": "NGA",
+        "coordinates": [
+          4.5539,
+          7.7792
+        ],
+        "coordinate_source": "https://mapcarta.com/Osogbo",
+        "location_kind": "town",
+        "place_id": "osogbo",
+        "community_id": "osogbo",
+        "title": "Hometown",
+        "text": "Osogbo · Osun state.",
+        "kind": "hometown",
+        "precision": "Town/city reference point · exact building or venue not verified",
+        "evidence": "Scholar-confirmed response",
+        "source": "",
+        "zoom": 13
+      },
+      {
+        "name": "Osogbo",
+        "country_code": "NGA",
+        "coordinates": [
+          4.5539,
+          7.7792
+        ],
+        "coordinate_source": "https://mapcarta.com/Osogbo",
+        "location_kind": "town",
+        "place_id": "osogbo",
+        "community_id": "osogbo",
+        "title": "Basic school",
+        "text": "Faith In Prayer Nursery And Primary School. · Osogbo · Nigeria.",
+        "kind": "education",
+        "precision": "Town/city reference point · exact building or venue not verified",
+        "evidence": "Scholar-confirmed response",
+        "source": "",
+        "zoom": 13
+      },
+      {
+        "name": "Ilorin",
+        "country_code": "NGA",
+        "coordinates": [
+          4.548,
+          8.4964
+        ],
+        "coordinate_source": "https://mapcarta.com/Ilorin",
+        "location_kind": "town",
+        "place_id": "ilorin",
+        "community_id": "ilorin",
+        "title": "High school",
+        "text": "Precious Gift International School · Ilorin · Nigeria.",
+        "kind": "education",
+        "precision": "Town/city reference point · exact building or venue not verified",
+        "evidence": "Scholar-confirmed response",
+        "source": "",
+        "zoom": 13
+      },
+      {
+        "name": "University of Ilorin campus reference",
+        "country_code": "NGA",
+        "coordinates": [
+          4.65774,
+          8.4766
+        ],
+        "coordinate_source": "https://mapcarta.com/W1482800400",
+        "location_kind": "facility",
+        "place_id": "unilorin",
+        "community_id": "ilorin",
+        "title": "Previous university",
+        "text": "University of Ilorin, Ilorin, Kwara State · Ilorin · Nigeria.",
+        "kind": "education",
+        "precision": "Mapped school/campus point · representative within the site",
+        "evidence": "Scholar-confirmed response",
+        "source": "",
+        "zoom": 14
+      },
+      {
+        "name": "Ilorin",
+        "country_code": "NGA",
+        "coordinates": [
+          4.548,
+          8.4964
+        ],
+        "coordinate_source": "https://mapcarta.com/Ilorin",
+        "location_kind": "town",
+        "place_id": "ilorin",
+        "community_id": "ilorin",
+        "title": "Community outreach",
+        "text": "Nigeria · Ilorin, Kwara State · Community outreach · Do Your Part · Helped map a polluted river and encouraged community environmental responsibility.",
+        "kind": "experience",
+        "precision": "Town/city reference point · exact building or venue not verified",
+        "evidence": "Scholar-confirmed response",
+        "source": "",
+        "zoom": 13
+      },
+      {
+        "name": "Sokoto, Sokoto State",
+        "country_code": "NGA",
+        "coordinates": [
+          5.2373,
+          13.0611
+        ],
+        "coordinate_source": "https://mapcarta.com/Sokoto",
+        "location_kind": "town",
+        "place_id": "sokoto",
+        "community_id": "sokoto",
+        "title": "Leadership and outreach",
+        "text": "Nigeria · Sokoto, Sokoto State · Leadership and outreach · Women in Surveying · Served as State Coordinator and organised secondary school outreach to encourage girls to pursue geospatial careers.",
+        "kind": "experience",
+        "precision": "Town/city reference point · exact building or venue not verified",
+        "evidence": "Scholar-confirmed response",
+        "source": "",
+        "zoom": 13
+      },
+      {
+        "name": "Port Harcourt",
+        "country_code": "NGA",
+        "coordinates": [
+          7.0189,
+          4.7677
+        ],
+        "coordinate_source": "https://mapcarta.com/Port_Harcourt",
+        "location_kind": "town",
+        "place_id": "port-harcourt",
+        "community_id": "port-harcourt",
+        "title": "Professional experience",
+        "text": "Nigeria · Port Harcourt, Rivers State · Professional experience · Subsea100 Global Limited · Worked as a project and hydrographic surveyor, supporting offshore surveys, seabed mapping, and pipeline projects.",
+        "kind": "experience",
+        "precision": "Town/city reference point · exact building or venue not verified",
+        "evidence": "Scholar-confirmed response",
+        "source": "",
+        "zoom": 13
+      },
+      {
+        "name": "Port Harcourt",
+        "country_code": "NGA",
+        "coordinates": [
+          7.0189,
+          4.7677
+        ],
+        "coordinate_source": "https://mapcarta.com/Port_Harcourt",
+        "location_kind": "town",
+        "place_id": "port-harcourt",
+        "community_id": "port-harcourt",
+        "title": "Environmental volunteering",
+        "text": "Nigeria · Port Harcourt, Rivers State · Environmental volunteering · Plogging Nigeria, World Cleanup Day 2025 · Participated in and helped coordinate community cleanup activities.",
+        "kind": "experience",
+        "precision": "Town/city reference point · exact building or venue not verified",
+        "evidence": "Scholar-confirmed response",
+        "source": "",
+        "zoom": 13
+      },
+      {
+        "name": "Port Harcourt",
+        "country_code": "NGA",
+        "coordinates": [
+          7.0189,
+          4.7677
+        ],
+        "coordinate_source": "https://mapcarta.com/Port_Harcourt",
+        "location_kind": "town",
+        "place_id": "port-harcourt",
+        "community_id": "port-harcourt",
+        "title": "Software training",
+        "text": "Nigeria · Port Harcourt, Rivers State · Software training · Rivers State University · Trained students in the use of EIVA software for offshore navigation and survey operations.",
+        "kind": "experience",
+        "precision": "Town/city reference point · exact building or venue not verified",
+        "evidence": "Scholar-confirmed response",
+        "source": "",
+        "zoom": 13
+      },
+      {
+        "name": "UBC Vancouver campus",
+        "country_code": "CAN",
+        "coordinates": [
+          -123.246,
+          49.2606
+        ],
+        "coordinate_source": "https://www.ubc.ca/about/maps.html",
+        "location_kind": "facility",
+        "place_id": "ubc",
+        "community_id": "vancouver",
+        "title": "UBC",
+        "text": "University of British Columbia · Vancouver campus · 2026 cohort.",
+        "kind": "ubc",
+        "precision": "Mapped school/campus point · representative within the site",
+        "evidence": "Scholar-confirmed response",
+        "source": "",
+        "zoom": 14
+      }
+    ]
+  }
+}

@@ -1,0 +1,339 @@
+{
+  "institution": "University of British Columbia",
+  "intake": "Winter 2027",
+  "checked_on": "2026-10-24",
+  "source_url": "https://mastercardfdn.scholars.ubc.ca/graduate-admissions/graduate-admissions-2/",
+  "geographic_rule": "Be a citizen or a refugee of an African country.",
+  "label": "UBC geographic criterion",
+  "scope_note": "This map operationalises the published African-country geographic criterion as the 54 UN-member African states. UBC does not publish an enumerated country list on the source page. This is not a determination of individual eligibility; academic, age, programme and other requirements apply. Western Sahara is shown separately with eligibility unverified. Historic scholar origins are not proof of current eligibility.",
+  "country_count": 54,
+  "countries": [
+    {
+      "iso3": "DZA",
+      "name": "Algeria",
+      "label_lon": 2.808241,
+      "label_lat": 27.397406
+    },
+    {
+      "iso3": "AGO",
+      "name": "Angola",
+      "label_lon": 17.984249,
+      "label_lat": -12.182762
+    },
+    {
+      "iso3": "BEN",
+      "name": "Benin",
+      "label_lon": 2.352018,
+      "label_lat": 10.324775
+    },
+    {
+      "iso3": "BWA",
+      "name": "Botswana",
+      "label_lon": 24.179216,
+      "label_lat": -22.102634
+    },
+    {
+      "iso3": "BFA",
+      "name": "Burkina Faso",
+      "label_lon": -1.36388,
+      "label_lat": 12.673048
+    },
+    {
+      "iso3": "BDI",
+      "name": "Burundi",
+      "label_lon": 29.917086,
+      "label_lat": -3.332836
+    },
+    {
+      "iso3": "CPV",
+      "name": "Cabo Verde",
+      "label_lon": -23.639434,
+      "label_lat": 15.074761
+    },
+    {
+      "iso3": "CMR",
+      "name": "Cameroon",
+      "label_lon": 12.473488,
+      "label_lat": 4.585041
+    },
+    {
+      "iso3": "CAF",
+      "name": "Central African Republic",
+      "label_lon": 20.906897,
+      "label_lat": 6.989681
+    },
+    {
+      "iso3": "TCD",
+      "name": "Chad",
+      "label_lon": 18.645041,
+      "label_lat": 15.142959
+    },
+    {
+      "iso3": "COM",
+      "name": "Comoros",
+      "label_lon": 43.318094,
+      "label_lat": -11.727683
+    },
+    {
+      "iso3": "COD",
+      "name": "Democratic Republic of the Congo",
+      "label_lon": 23.458829,
+      "label_lat": -1.858167
+    },
+    {
+      "iso3": "DJI",
+      "name": "Djibouti",
+      "label_lon": 42.498825,
+      "label_lat": 11.976343
+    },
+    {
+      "iso3": "EGY",
+      "name": "Egypt",
+      "label_lon": 29.445837,
+      "label_lat": 26.186173
+    },
+    {
+      "iso3": "GNQ",
+      "name": "Equatorial Guinea",
+      "label_lon": 8.9902,
+      "label_lat": 2.333
+    },
+    {
+      "iso3": "ERI",
+      "name": "Eritrea",
+      "label_lon": 38.285566,
+      "label_lat": 15.787401
+    },
+    {
+      "iso3": "SWZ",
+      "name": "Eswatini",
+      "label_lon": 31.467264,
+      "label_lat": -26.533676
+    },
+    {
+      "iso3": "ETH",
+      "name": "Ethiopia",
+      "label_lon": 39.0886,
+      "label_lat": 8.032795
+    },
+    {
+      "iso3": "GAB",
+      "name": "Gabon",
+      "label_lon": 11.835939,
+      "label_lat": -0.437739
+    },
+    {
+      "iso3": "GHA",
+      "name": "Ghana",
+      "label_lon": -1.036941,
+      "label_lat": 7.717639
+    },
+    {
+      "iso3": "GIN",
+      "name": "Guinea",
+      "label_lon": -10.016402,
+      "label_lat": 10.618516
+    },
+    {
+      "iso3": "GNB",
+      "name": "Guinea-Bissau",
+      "label_lon": -14.52413,
+      "label_lat": 12.163712
+    },
+    {
+      "iso3": "CIV",
+      "name": "Ivory Coast",
+      "label_lon": -5.568618,
+      "label_lat": 7.49139
+    },
+    {
+      "iso3": "KEN",
+      "name": "Kenya",
+      "label_lon": 37.907632,
+      "label_lat": 0.549043
+    },
+    {
+      "iso3": "LSO",
+      "name": "Lesotho",
+      "label_lon": 28.246639,
+      "label_lat": -29.480158
+    },
+    {
+      "iso3": "LBR",
+      "name": "Liberia",
+      "label_lon": -9.460379,
+      "label_lat": 6.447177
+    },
+    {
+      "iso3": "LBY",
+      "name": "Libya",
+      "label_lon": 18.011015,
+      "label_lat": 26.638944
+    },
+    {
+      "iso3": "MDG",
+      "name": "Madagascar",
+      "label_lon": 46.704241,
+      "label_lat": -18.628288
+    },
+    {
+      "iso3": "MWI",
+      "name": "Malawi",
+      "label_lon": 33.608082,
+      "label_lat": -13.386737
+    },
+    {
+      "iso3": "MLI",
+      "name": "Mali",
+      "label_lon": -2.038455,
+      "label_lat": 18.692713
+    },
+    {
+      "iso3": "MRT",
+      "name": "Mauritania",
+      "label_lon": -9.740299,
+      "label_lat": 19.587062
+    },
+    {
+      "iso3": "MUS",
+      "name": "Mauritius",
+      "label_lon": 57.565848,
+      "label_lat": -20.299506
+    },
+    {
+      "iso3": "MAR",
+      "name": "Morocco",
+      "label_lon": -7.187296,
+      "label_lat": 31.650723
+    },
+    {
+      "iso3": "MOZ",
+      "name": "Mozambique",
+      "label_lon": 37.83789,
+      "label_lat": -13.94323
+    },
+    {
+      "iso3": "NAM",
+      "name": "Namibia",
+      "label_lon": 17.108166,
+      "label_lat": -20.575298
+    },
+    {
+      "iso3": "NER",
+      "name": "Niger",
+      "label_lon": 9.504356,
+      "label_lat": 17.446195
+    },
+    {
+      "iso3": "NGA",
+      "name": "Nigeria",
+      "label_lon": 7.50322,
+      "label_lat": 9.439799
+    },
+    {
+      "iso3": "COG",
+      "name": "Republic of the Congo",
+      "label_lon": 15.9005,
+      "label_lat": 0.142331
+    },
+    {
+      "iso3": "RWA",
+      "name": "Rwanda",
+      "label_lon": 30.103894,
+      "label_lat": -1.897196
+    },
+    {
+      "iso3": "SEN",
+      "name": "Senegal",
+      "label_lon": -14.778586,
+      "label_lat": 15.138125
+    },
+    {
+      "iso3": "SYC",
+      "name": "Seychelles",
+      "label_lon": 55.480175,
+      "label_lat": -4.676659
+    },
+    {
+      "iso3": "SLE",
+      "name": "Sierra Leone",
+      "label_lon": -11.763677,
+      "label_lat": 8.617449
+    },
+    {
+      "iso3": "SOM",
+      "name": "Somalia",
+      "label_lon": 45.19238,
+      "label_lat": 3.568925
+    },
+    {
+      "iso3": "ZAF",
+      "name": "South Africa",
+      "label_lon": 23.665734,
+      "label_lat": -29.708776
+    },
+    {
+      "iso3": "SSD",
+      "name": "South Sudan",
+      "label_lon": 30.390151,
+      "label_lat": 7.230477
+    },
+    {
+      "iso3": "SDN",
+      "name": "Sudan",
+      "label_lon": 29.260657,
+      "label_lat": 16.330746
+    },
+    {
+      "iso3": "STP",
+      "name": "São Tomé and Príncipe",
+      "label_lon": 7.021,
+      "label_lat": 0.9709
+    },
+    {
+      "iso3": "TZA",
+      "name": "Tanzania",
+      "label_lon": 34.959183,
+      "label_lat": -6.051866
+    },
+    {
+      "iso3": "GMB",
+      "name": "The Gambia",
+      "label_lon": -14.998318,
+      "label_lat": 13.641721
+    },
+    {
+      "iso3": "TGO",
+      "name": "Togo",
+      "label_lon": 1.058113,
+      "label_lat": 8.80722
+    },
+    {
+      "iso3": "TUN",
+      "name": "Tunisia",
+      "label_lon": 9.007881,
+      "label_lat": 33.687263
+    },
+    {
+      "iso3": "UGA",
+      "name": "Uganda",
+      "label_lon": 32.948555,
+      "label_lat": 1.972589
+    },
+    {
+      "iso3": "ZMB",
+      "name": "Zambia",
+      "label_lon": 26.395298,
+      "label_lat": -14.660804
+    },
+    {
+      "iso3": "ZWE",
+      "name": "Zimbabwe",
+      "label_lon": 29.925444,
+      "label_lat": -18.91164
+    }
+  ],
+  "unverified_country_codes": [
+    "ESH"
+  ]
+}
