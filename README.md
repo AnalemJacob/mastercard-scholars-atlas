@@ -97,3 +97,5 @@ Use `type: "video"` for a directly hosted MP4 or `type: "audio"` for a directly 
 During **Follow a scholar**, the progress strip opens any stop. **Play** waits for each flight to finish, pauses at the destination for about four seconds, then advances. **Pause** stops automatic advancement; an in-progress camera flight completes normally. **Replay** returns to the hometown. Manual navigation stops autoplay. Repeated places retain the existing stationary behaviour. **Share this scholar** copies a link to that profile or the selected journey stop.
 
 The represented-country panel can be hidden or expanded. Country labels adapt to the available map space; markers and hover labels remain available for every represented country.
+
+External photo albums can also be listed in `data/gallery.json`: use `type: "album"`, `title`, `caption`, and `url`. They open the photographer's original gallery in a new tab. The Welcome Day album is linked this way; its photos remain hosted by Twinklz Multimedia on Pic-Time.

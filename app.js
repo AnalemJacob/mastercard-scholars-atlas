@@ -1,4 +1,4 @@
-import {setupExperience,placeCountryLabels} from './atlas-experience.mjs?v=20261101-experience';
+import {setupExperience,placeCountryLabels} from './atlas-experience.mjs?v=20261101-welcome-album';
 import {sameJourneyPlace} from './journey-model.mjs?v=20261031-github';
 import {createJourneyFlight} from './flight.mjs?v=20261031-github';
 import {STUDY_AREAS,studyAreas,matchesStudyArea,routeWidth,storySteps} from './explorer.mjs';
