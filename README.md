@@ -72,3 +72,28 @@ Only publish profile, photo and location information approved for public release
 GitHub Pages documentation:
 https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages
 https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site
+
+## Media gallery and journey controls
+
+Use **Media gallery** in the header to browse existing scholar and leadership portraits. Search, filter by collection and open an image to view it at a larger size. **Open scholar on map** opens the matching profile.
+
+To add community, school or journey media, upload the file into `media/` and add an entry to `data/gallery.json`. This file starts as an empty array; portraits load automatically from scholars.json and leaders.json. Example:
+
+```json
+[
+  {
+    "src": "media/community-photo.jpg",
+    "title": "A day with our cohort",
+    "caption": "Add your own description here",
+    "scholar_id": "ubc2026_032",
+    "type": "image",
+    "source": ""
+  }
+]
+```
+
+Use `type: "video"` for a directly hosted MP4 or `type: "audio"` for a directly hosted audio file. Keep media sizes modest for fast loading. Use an existing scholar ID to link a photograph to that person's profile. The gallery uses supplied captions and never invents locations or memories.
+
+During **Follow a scholar**, the progress strip opens any stop. **Play** waits for each flight to finish, pauses at the destination for about four seconds, then advances. **Pause** stops automatic advancement; an in-progress camera flight completes normally. **Replay** returns to the hometown. Manual navigation stops autoplay. Repeated places retain the existing stationary behaviour. **Share this scholar** copies a link to that profile or the selected journey stop.
+
+The represented-country panel can be hidden or expanded. Country labels adapt to the available map space; markers and hover labels remain available for every represented country.

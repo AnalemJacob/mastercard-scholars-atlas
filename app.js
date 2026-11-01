@@ -1,3 +1,4 @@
+import {setupExperience,placeCountryLabels} from './atlas-experience.mjs?v=20261101-experience';
 import {sameJourneyPlace} from './journey-model.mjs?v=20261031-github';
 import {createJourneyFlight} from './flight.mjs?v=20261031-github';
 import {STUDY_AREAS,studyAreas,matchesStudyArea,routeWidth,storySteps} from './explorer.mjs';
@@ -9,6 +10,7 @@ const percent=n=>`${n.toFixed(1).replace(/\.0$/,'')}%`;
 const state={records:[],demo:[],countries:[],eligibility:null,university:'',cohort:'',query:'',tab:'overview',mode:'journeys',focusCountry:null,detail:null,sort:'count',sample:true,storage:false,map:null,mapReady:false,towns:new Map(),hover:null,detailed:false,mapErrors:0,renderer:'maplibre',background:'atlas',interest:'',story:null,storyEvidence:{},trialJourneys:{},routeEntries:[]};
 const STORAGE_KEY='scholars-atlas-v2-records';
 let toastTimer,searchTimer;
+let refreshExperience=()=>{};
 function toast(message){$('toast').textContent=message;$('toast').hidden=false;clearTimeout(toastTimer);toastTimer=setTimeout(()=>$('toast').hidden=true,4500);}
 const scopeRecords=()=>state.records.filter(r=>(!state.university||r.university===state.university)&&(!state.cohort||r.cohort===state.cohort)&&matchesStudyArea(r,state.interest));
 const matches=r=>!state.query||[r.name,r.hometown,r.region,r.country,r.programme,r.theme].join(' ').toLowerCase().includes(state.query.toLowerCase());
@@ -38,7 +40,7 @@ function render(){
   $('originLegend').innerHTML=s.rows.filter(c=>c.count>0).map(c=>`<button class="origin-legend-item" data-country="${esc(c.iso3)}"><i style="background:${countryColor(c.iso3)}"></i><span>${esc(c.name)}</span><b>${c.count}</b></button>`).join('');
   document.querySelectorAll('[data-tab]').forEach(b=>b.setAttribute('aria-selected',String(b.dataset.tab===state.tab)));
   $('sidebarContent').setAttribute('aria-labelledby',`tab-${state.tab}`);
-  renderSidebar(s);renderDetail(s);updateMap(s);
+  renderSidebar(s);renderDetail(s);updateMap(s);refreshExperience();
 }
 function renderSidebar(s){
   const root=$('sidebarContent');
@@ -272,13 +274,15 @@ function updateLeafletMap(s){
   }
  }
  const allRefs=countryConnections(state.story?records:visibleRecords(),state.countries,{ubcOnly:false});
+ const labelSize=map.getSize();
+ const labelPlacements=placeCountryLabels(allRefs.map(c=>{const p=map.latLngToContainerPoint([c.coordinates[1],c.coordinates[0]]);return {...c,x:p.x,y:p.y};}),labelSize.x,labelSize.y);
  for(const c of personalJourney()?[]:allRefs){
   const marker=L.marker([c.coordinates[1],c.coordinates[0]],{icon:L.divIcon({className:'country-reference-marker',html:`<span class="reference-dot" style="--country:${c.color}"></span>`,iconSize:[18,18],iconAnchor:[9,9]}),title:`${c.name}: ${c.count} scholar${c.count===1?'':'s'}. Country reference point.`,keyboard:true}).addTo(state.leafMarkers);
   marker.bindTooltip(`<strong>${esc(c.name)} · ${c.count}</strong><br><span>Country reference point · not a hometown</span>`,{direction:'top',className:'atlas-tooltip'});
   marker.on('click',()=>selectCountry(c.code));marker.on('mouseover',()=>highlightConnections('country',c.code)).on('mouseout',()=>highlightConnections());
-  if(state.mode==='origins'||zoom>=3.2){
-   const offset={RWA:[-30,17],UGA:[-20,-19],KEN:[23,4],ETH:[24,-11],SOM:[22,7],GHA:[-10,16],SLE:[-16,-5],NGA:[2,-14],CMR:[-12,18],ZWE:[0,18]}[c.code]||[0,15];
-   marker.bindTooltip(`<b style="color:${c.color}">${esc(c.name)}</b> <span>${c.count}</span>`,{permanent:true,direction:offset[0]<0?'left':'right',offset,opacity:1,className:'country-name-tooltip'});
+  const placement=labelPlacements.get(c.code);
+  if((state.mode==='origins'||zoom>=3.2)&&placement){
+   marker.bindTooltip(`<b style="color:${c.color}">${esc(c.name)}</b> <span>${c.count}</span>`,{permanent:true,direction:placement.direction,offset:placement.offset,opacity:1,className:'country-name-tooltip'});
   }
  }
  if(state.mode==='journeys'&&!personalJourney()){
@@ -310,6 +314,7 @@ async function init(){
     state.demo=demo;state.records=rows;state.sample=rows.every(r=>r.demo===true);
     try{const saved=JSON.parse(localStorage.getItem(STORAGE_KEY)||'null');if(saved?.records?.length){const valid=normalizeRecords(saved.records,state.countries);if(!valid.errors.length){state.records=valid.records.map(r=>{const latest=rows.find(p=>p.id===r.id);if(latest&&state.trialJourneys[r.id])return {...r,...latest};const published=rows.find(p=>p.id===r.id&&p.name===r.name);return published?{...r,hometown:published.hometown||r.hometown,region:published.region||r.region,photo:published.photo||r.photo,photo_source_url:published.photo_source_url,linkedin_url:published.linkedin_url||r.linkedin_url}:r;});const ids=new Set(state.records.map(r=>r.id));state.records.push(...rows.filter(r=>!ids.has(r.id)));state.sample=false;state.storage=true;}}}catch{}
     populateFilters();wireEvents();render();createMap();
+    refreshExperience=setupExperience({state,render,currentStorySteps,startStory,selectScholar,frameStory,toast});
     window.atlas={state,summary,normalizeRecords:rows=>normalizeRecords(rows,state.countries),selectCountry,selectScholar,render};
   }catch(error){$('sidebarContent').innerHTML=`<p class="empty-state">The atlas could not load its data. Refresh the page and check that the data folder is present in the GitHub Pages repository.</p>`;$('mapLoading').hidden=true;toast(error.message);console.error(error);}
 }
