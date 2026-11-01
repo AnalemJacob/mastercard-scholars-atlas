@@ -4,7 +4,7 @@ const widget=document.createElement('div');widget.className='atlas-music-widget'
 const handle=document.createElement('button');handle.type='button';handle.className='music-move-handle';handle.textContent='⠿';handle.title='Drag to move music player';handle.setAttribute('aria-label','Move music player: drag or use arrow keys');
 widget.append(handle,button);
 const panel=document.createElement('section');panel.id='atlasMusic';panel.className='atlas-music-panel';panel.hidden=true;panel.setAttribute('aria-label','Africa Arise music player');
-panel.innerHTML='<div class="music-heading" title="Drag here to move player"><div><strong><span aria-hidden="true">⠿</span> Africa Arise</strong><small>Ngoma Empire · drag this bar to move</small></div><button type="button" aria-label="Close music player">×</button></div><audio controls preload="none" aria-label="Play Africa Arise" src="media/africa-arise.mp3"></audio><label class="music-repeat"><input type="checkbox"> Repeat song</label><p class="music-message" role="status">Play while you explore the map.</p>';
+panel.innerHTML='<div class="music-heading" title="Drag here to move player"><strong><span aria-hidden="true">⠿</span> Africa Arise</strong><button type="button" aria-label="Close music player">×</button></div><audio preload="none" src="media/africa-arise.mp3"></audio><div class="music-playback"><button type="button" class="music-play" aria-label="Play song">▶</button><input class="music-seek" type="range" min="0" max="164" step="0.1" value="0" aria-label="Song position"><span class="music-time">0:00</span></div><div class="music-options"><small>Ngoma Empire</small><button type="button" class="music-loop" aria-label="Repeat song" aria-pressed="false" title="Repeat song">↻</button><button type="button" class="music-mute" aria-label="Mute song" title="Mute song">♪</button><input class="music-volume" type="range" min="0" max="1" step="0.05" value="1" aria-label="Volume"></div><span class="music-message" role="status" hidden></span>';
 const area=document.querySelector('.map-area');area.append(widget,panel);
 const audio=panel.querySelector('audio');
 let drag=null,suppressClick=false,position=null;
@@ -24,11 +24,21 @@ function placeWidget(x,y){
  placePanel();
 }
 function close(){audio.pause();panel.hidden=true;button.setAttribute('aria-expanded','false');button.focus();}
-button.onclick=()=>{if(suppressClick){suppressClick=false;return;}if(!panel.hidden){close();return;}panel.hidden=false;button.setAttribute('aria-expanded','true');placePanel();};
+button.onclick=()=>{if(suppressClick){suppressClick=false;return;}if(!panel.hidden){close();return;}panel.hidden=false;button.setAttribute('aria-expanded','true');if(audio.readyState===0){audio.preload='metadata';audio.load();}placePanel();};
 handle.onclick=()=>{suppressClick=false;};
 panel.querySelector('button').onclick=close;
-panel.querySelector('input').onchange=e=>{audio.loop=e.target.checked;};
-audio.addEventListener('error',()=>{panel.querySelector('.music-message').textContent='The song could not load. Refresh the page and try again.';});
+const play=panel.querySelector('.music-play'),seek=panel.querySelector('.music-seek'),time=panel.querySelector('.music-time'),loop=panel.querySelector('.music-loop'),mute=panel.querySelector('.music-mute');
+const clock=n=>Math.floor(n/60)+':'+String(Math.floor(n%60)).padStart(2,'0');
+play.onclick=async()=>{if(audio.paused){try{await audio.play();}catch{const msg=panel.querySelector('.music-message');msg.hidden=false;msg.textContent='Unable to play. Please try again.';}}else audio.pause();};
+function updatePlayback(){play.textContent=audio.paused?'▶':'Ⅱ';play.setAttribute('aria-label',audio.paused?'Play song':'Pause song');}
+for(const event of ['play','pause','ended'])audio.addEventListener(event,updatePlayback);
+audio.addEventListener('loadedmetadata',()=>{seek.max=audio.duration;});
+audio.addEventListener('timeupdate',()=>{seek.value=audio.currentTime;time.textContent=clock(audio.currentTime);});
+seek.oninput=e=>{if(Number.isFinite(audio.duration))audio.currentTime=Number(e.target.value);};
+loop.onclick=()=>{audio.loop=!audio.loop;loop.setAttribute('aria-pressed',String(audio.loop));};
+mute.onclick=()=>{audio.muted=!audio.muted;mute.textContent=audio.muted?'×':'♪';mute.setAttribute('aria-label',audio.muted?'Unmute song':'Mute song');};
+panel.querySelector('.music-volume').oninput=e=>{audio.volume=Number(e.target.value);audio.muted=false;mute.textContent='♪';mute.setAttribute('aria-label','Mute song');};
+audio.addEventListener('error',()=>{const msg=panel.querySelector('.music-message');msg.hidden=false;msg.textContent='Song unavailable. Please refresh and retry.';});
 panel.addEventListener('keydown',e=>{if(e.key==='Escape'){e.stopPropagation();close();}});
 button.title='Click to play · drag using the dotted handle';
 function begin(e){
