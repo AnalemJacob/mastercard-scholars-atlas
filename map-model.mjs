@@ -1,7 +1,7 @@
 import {UBC,greatCircle} from './core.mjs';
 
 // Colour identifies a country. It never fades when the country has fewer scholars.
-export const COUNTRY_COLORS={GHA:'#e6b65e',NGA:'#e58f73',ETH:'#79baa6',RWA:'#d996af',KEN:'#89afd1',UGA:'#aaa1cc',SOM:'#83bec4',SLE:'#bec77f',CMR:'#dca36e',ZWE:'#c1a0cf',ERI:'#cb8fb5',GMB:'#92bd94',MWI:'#d2bc86'};
+export const COUNTRY_COLORS={GHA:'#f4bd50',NGA:'#ff896e',ETH:'#51d4b4',RWA:'#f497be',KEN:'#71b9ff',UGA:'#ab9cff',SOM:'#71dce7',SLE:'#c6db70',CMR:'#f6aa71',ZWE:'#d3a3f5',ERI:'#e986ce',GMB:'#78dd9d',MWI:'#e7c080'};
 export function countryColor(code){return COUNTRY_COLORS[code]||'#73cdd2';}
 export const CAMPUS=[-123.246,49.2606];
 export function countryReference(code,countries){

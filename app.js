@@ -1,9 +1,9 @@
-import {setupExperience,placeCountryLabels} from './atlas-experience.mjs?v=20261101-polish';
+import {setupExperience,placeCountryLabels} from './atlas-experience.mjs?v=20261101-navy';
 import {sameJourneyPlace} from './journey-model.mjs?v=20261031-github';
 import {createJourneyFlight} from './flight.mjs?v=20261031-github';
 import {STUDY_AREAS,studyAreas,matchesStudyArea,routeWidth,storySteps} from './explorer.mjs';
 import {UBC,CSV_FIELDS,clean,escapeHTML as esc,hasLocation,safeURL,normalizeRecords,summarize,makeTownFeatures,greatCircle} from './core.mjs';
-import {countryColor,countryReference,countryConnections,connectionFeatures,UNIVERSITY_DESTINATIONS,universityConnections} from './map-model.mjs?v=20261101-polish';
+import {countryColor,countryReference,countryConnections,connectionFeatures,UNIVERSITY_DESTINATIONS,universityConnections} from './map-model.mjs?v=20261101-navy';
 const $=id=>document.getElementById(id);
 const nf=new Intl.NumberFormat('en');
 const percent=n=>`${n.toFixed(1).replace(/\.0$/,'')}%`;
@@ -254,7 +254,7 @@ function updateBackground(){
 function leafCountryStyle(feature,s){
  const c=feature.properties,n=s.counts.get(c.iso3)||0,z=state.map?.getZoom?.()||2,selected=state.focusCountry===c.iso3;
  if(state.story)return {fillOpacity:0,color:'#9ac4b5',weight:.5,opacity:.25};
- return {fillColor:n?countryColor(c.iso3):c.eligibility==='geographic'?'#41464a':'#2c3136',fillOpacity:state.activeBackground!=='atlas'?(z>=5?0:n?.12:0):z>=7?.12:n?.72:.84,color:selected?'#ffffff':n?countryColor(c.iso3):'#5b6064',weight:selected?2.8:n?1.4:.55,opacity:n?1:.7};
+ return {fillColor:n?countryColor(c.iso3):c.eligibility==='geographic'?'#2b3d55':'#182a40',fillOpacity:state.activeBackground!=='atlas'?(z>=5?0:n?.12:0):z>=7?.12:n?.88:.84,color:selected?'#ffffff':n?countryColor(c.iso3):'#4a5a70',weight:selected?2.8:n?1.4:.55,opacity:n?1:.7};
 }
 function routeRecords(){return state.detail?.type==='scholar'?scopeRecords().filter(r=>r.id===state.detail.id):visibleRecords();}
 function updateLeafletMap(s){
