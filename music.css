@@ -2,3 +2,10 @@
 .atlas-music-panel audio{display:block;width:100%;height:40px;margin:12px 0;accent-color:#f1bb62}.music-repeat{display:flex;align-items:center;gap:7px;color:#c1d3e6;font-size:11px}.music-repeat input{accent-color:#f1bb62}
 
 .atlas-music-button{touch-action:none;user-select:none;-webkit-user-select:none;cursor:grab}.atlas-music-button.is-dragging{cursor:grabbing;box-shadow:0 6px 20px #0005}
+/* A visible grip moves the closed button; the open player's title bar moves it too. */
+.atlas-music-widget{position:absolute;z-index:901;right:25px;bottom:89px;display:flex;align-items:stretch;border:1px solid #506781;border-radius:22px;background:#183452;box-shadow:0 3px 12px #06142630;max-width:calc(100% - 16px)}
+.atlas-music-widget .atlas-music-button{position:static!important;border:0;border-radius:0 22px 22px 0;box-shadow:none;cursor:pointer;padding-left:8px}
+.music-move-handle{background:#254665;color:#f4cd81;border:0;border-right:1px solid #506781;border-radius:22px 0 0 22px;font-size:23px;line-height:1;padding:5px 10px;cursor:grab;touch-action:none;user-select:none;-webkit-user-select:none}
+.music-heading{cursor:grab;touch-action:none;user-select:none;-webkit-user-select:none}.music-heading button{cursor:pointer}.music-heading strong span{color:#f4cd81;font-size:18px}.atlas-music-widget.is-dragging,.atlas-music-widget.is-dragging *{cursor:grabbing!important}
+.map-area:has(.detail-card:not([hidden])) .atlas-music-widget{right:290px}.map-area.personal-journey .atlas-music-widget{bottom:calc(var(--map-bottom,110px) + 10px)}
+@media(max-width:760px){.atlas-music-widget,.map-area:has(.detail-card:not([hidden])) .atlas-music-widget{right:14px;bottom:calc(var(--map-bottom,90px) + 8px)}}
