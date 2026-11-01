@@ -1,9 +1,9 @@
-import {setupExperience,placeCountryLabels} from './atlas-experience.mjs?v=20261101-welcome-album';
+import {setupExperience,placeCountryLabels} from './atlas-experience.mjs?v=20261101-polish';
 import {sameJourneyPlace} from './journey-model.mjs?v=20261031-github';
 import {createJourneyFlight} from './flight.mjs?v=20261031-github';
 import {STUDY_AREAS,studyAreas,matchesStudyArea,routeWidth,storySteps} from './explorer.mjs';
 import {UBC,CSV_FIELDS,clean,escapeHTML as esc,hasLocation,safeURL,normalizeRecords,summarize,makeTownFeatures,greatCircle} from './core.mjs';
-import {countryColor,countryReference,countryConnections,connectionFeatures,UNIVERSITY_DESTINATIONS,universityConnections} from './map-model.mjs';
+import {countryColor,countryReference,countryConnections,connectionFeatures,UNIVERSITY_DESTINATIONS,universityConnections} from './map-model.mjs?v=20261101-polish';
 const $=id=>document.getElementById(id);
 const nf=new Intl.NumberFormat('en');
 const percent=n=>`${n.toFixed(1).replace(/\.0$/,'')}%`;
@@ -68,7 +68,7 @@ function fitJourneyMap(records=routeRecords(),detail=false){
  const connections=universityConnections(records,state.countries),points=connections.flatMap(c=>greatCircle(c.coordinates,c.destination.coordinates).coordinates.flat().map(p=>[p[1],p[0]]));
  for(const r of records){const d=UNIVERSITY_DESTINATIONS[r.university];if(d)points.push([d.coordinates[1],d.coordinates[0]]);}
  if(!points.length)return;
- state.map.fitBounds(L.latLngBounds(points),{paddingTopLeft:[45,35],paddingBottomRight:[40,65],maxZoom:connections.length?3.5:5,animate:true});
+ state.map.fitBounds(L.latLngBounds(points),{paddingTopLeft:[30,24],paddingBottomRight:[30,28],maxZoom:connections.length?3.5:5,animate:true});
 }
 function fitConnection(code){
  if(!state.mapReady)return;
@@ -119,7 +119,7 @@ function updateMapHeadings(){
 function changeMode(mode){
  state.story=null;
  state.mode=mode;$('originsMode').classList.toggle('selected',mode==='origins');$('journeysMode').classList.toggle('selected',mode==='journeys');$('originsMode').setAttribute('aria-pressed',String(mode==='origins'));$('journeysMode').setAttribute('aria-pressed',String(mode==='journeys'));render();
- if(state.mapReady){if(mode==='journeys')fitJourneyMap();else state.map.fitBounds([[-29,-20],[22,55]],{paddingTopLeft:[25,70],paddingBottomRight:[30,120],animate:true});}
+ if(state.mapReady){if(mode==='journeys')fitJourneyMap();else state.map.fitBounds([[-29,-20],[22,55]],{paddingTopLeft:[28,28],paddingBottomRight:[28,28],animate:true});}
 }
 function download(name,data,type){const blob=new Blob([data],{type});const url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);}
 function exportStats(){const s=summary();download('country_representation.csv',Papa.unparse(s.rows.map(c=>({country:c.name,country_code:c.iso3,scholars:c.count,share_percent:Number(c.share.toFixed(4)),denominator:s.total,university:state.university||'All universities',cohort:state.cohort||'All cohorts',ubc_geographic_scope:c.eligible,mode:state.sample?'FICTIONAL SAMPLE':'Imported dataset'}))),'text/csv;charset=utf-8');toast('Country statistics downloaded.');}
@@ -164,7 +164,8 @@ function renderStory(card){const r=state.records.find(r=>r.id===state.story.id);
 }
 function highlightConnections(kind,value){
  state.routeHighlight=value?{kind,value}:null;
- for(const entry of state.routeEntries||[]){const active=!value||(kind==='country'?entry.country===value:entry.university===value);entry.line.setStyle({opacity:active?.94:.08,weight:entry.width+(value&&active?1:0)});entry.glow.setStyle({opacity:active?.08:.01});}
+ if(!value&&state.focusCountry){kind='country';value=state.focusCountry;}
+ for(const entry of state.routeEntries||[]){const active=!value||(kind==='country'?entry.country===value:entry.university===value);entry.line.setStyle({opacity:value?(active?.95:.08):.46,weight:entry.width+(value&&active?1:0)});entry.glow.setStyle({opacity:value&&active?.09:.015});}
 }
 function wireEvents(){
  $('interestFilter').innerHTML='<option value="">All study areas</option>'+STUDY_AREAS.map(([label])=>`<option>${esc(label)}</option>`).join('');
@@ -216,7 +217,7 @@ function createLeafletMap(){
  if(typeof L==='undefined'){$('mapLoading').hidden=true;$('mapFallback').hidden=false;return;}
  try{
   state.renderer='leaflet';
-  const map=L.map('map',{zoomControl:false,preferCanvas:false,minZoom:1,maxZoom:18,worldCopyJump:false,maxBounds:[[-82,-180],[85,180]],maxBoundsViscosity:.7}).setView([25,-35],2);
+  const map=L.map('map',{zoomControl:false,preferCanvas:false,minZoom:1,maxZoom:18,zoomSnap:.25,zoomDelta:.5,worldCopyJump:false,maxBounds:[[-82,-180],[85,180]],maxBoundsViscosity:.7}).setView([25,-35],2);
   state.map=map;state.mapReady=true;state.flight=createJourneyFlight(map,L,()=>{updateBackground();updateLeafletMap(summary());});map.on('dragstart',()=>state.flight.interrupt());
   map.getContainer().addEventListener('wheel',()=>{if(state.flight.moving)state.flight.interrupt();},{passive:true});
   map.getContainer().addEventListener('pointerdown',event=>{if(state.flight.moving&&event.target.closest('.leaflet-control-zoom'))state.flight.interrupt();});
@@ -253,7 +254,7 @@ function updateBackground(){
 function leafCountryStyle(feature,s){
  const c=feature.properties,n=s.counts.get(c.iso3)||0,z=state.map?.getZoom?.()||2,selected=state.focusCountry===c.iso3;
  if(state.story)return {fillOpacity:0,color:'#9ac4b5',weight:.5,opacity:.25};
- return {fillColor:n?countryColor(c.iso3):c.eligibility==='geographic'?'#2b3d55':'#182a40',fillOpacity:state.activeBackground!=='atlas'?(z>=5?0:n?.12:0):z>=7?.12:n?.88:.84,color:selected?'#ffffff':n?countryColor(c.iso3):'#4a5a70',weight:selected?2.8:n?1.4:.55,opacity:n?1:.7};
+ return {fillColor:n?countryColor(c.iso3):c.eligibility==='geographic'?'#41464a':'#2c3136',fillOpacity:state.activeBackground!=='atlas'?(z>=5?0:n?.12:0):z>=7?.12:n?.72:.84,color:selected?'#ffffff':n?countryColor(c.iso3):'#5b6064',weight:selected?2.8:n?1.4:.55,opacity:n?1:.7};
 }
 function routeRecords(){return state.detail?.type==='scholar'?scopeRecords().filter(r=>r.id===state.detail.id):visibleRecords();}
 function updateLeafletMap(s){
@@ -267,8 +268,8 @@ function updateLeafletMap(s){
    const geom=greatCircle(c.coordinates,c.destination.coordinates);
    for(const line of geom.coordinates){
     const coords=line.map(p=>[p[1],p[0]]);
-    const width=routeWidth(c.count),glow=L.polyline(coords,{color:c.color,weight:width+6,opacity:.08,interactive:false}).addTo(state.leafRoutes);
-    const routeLine=L.polyline(coords,{color:c.color,weight:width,opacity:.94,dashArray:'7 7',className:'connection-flow',interactive:true}).addTo(state.leafRoutes).bindTooltip(`${esc(c.name)} → ${esc(c.destination.label)} · ${c.count} scholar${c.count===1?'':'s'}`,{className:'atlas-tooltip'});
+    const width=Math.max(1,routeWidth(c.count)*.55),glow=L.polyline(coords,{color:c.color,weight:width+6,opacity:.08,interactive:false}).addTo(state.leafRoutes);
+    const routeLine=L.polyline(coords,{color:c.color,weight:width,opacity:.46,dashArray:'4 7',className:'connection-flow',interactive:true}).addTo(state.leafRoutes).bindTooltip(`${esc(c.name)} → ${esc(c.destination.label)} · ${c.count} scholar${c.count===1?'':'s'}`,{className:'atlas-tooltip'});
     routeLine.on('mouseover',()=>highlightConnections('university',c.destination.name)).on('mouseout',()=>highlightConnections());state.routeEntries.push({line:routeLine,glow,width,country:c.code,university:c.destination.name});
    }
   }
@@ -314,7 +315,7 @@ async function init(){
     state.demo=demo;state.records=rows;state.sample=rows.every(r=>r.demo===true);
     try{const saved=JSON.parse(localStorage.getItem(STORAGE_KEY)||'null');if(saved?.records?.length){const valid=normalizeRecords(saved.records,state.countries);if(!valid.errors.length){state.records=valid.records.map(r=>{const latest=rows.find(p=>p.id===r.id);if(latest&&state.trialJourneys[r.id])return {...r,...latest};const published=rows.find(p=>p.id===r.id&&p.name===r.name);return published?{...r,hometown:published.hometown||r.hometown,region:published.region||r.region,photo:published.photo||r.photo,photo_source_url:published.photo_source_url,linkedin_url:published.linkedin_url||r.linkedin_url}:r;});const ids=new Set(state.records.map(r=>r.id));state.records.push(...rows.filter(r=>!ids.has(r.id)));state.sample=false;state.storage=true;}}}catch{}
     populateFilters();wireEvents();render();createMap();
-    refreshExperience=setupExperience({state,render,currentStorySteps,startStory,selectScholar,frameStory,toast});
+    refreshExperience=setupExperience({state,render,currentStorySteps,startStory,selectScholar,frameStory,toast,fitJourneyMap});
     window.atlas={state,summary,normalizeRecords:rows=>normalizeRecords(rows,state.countries),selectCountry,selectScholar,render};
   }catch(error){$('sidebarContent').innerHTML=`<p class="empty-state">The atlas could not load its data. Refresh the page and check that the data folder is present in the GitHub Pages repository.</p>`;$('mapLoading').hidden=true;toast(error.message);console.error(error);}
 }

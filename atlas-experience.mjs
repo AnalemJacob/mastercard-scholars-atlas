@@ -22,10 +22,10 @@ export function setupExperience(api){
  let playing=false,playKey='',timer=null,arrivalAt=0,arrivalKey='',previousStory='';
  const controls=document.createElement('section');controls.className='journey-dock';controls.hidden=true;controls.setAttribute('aria-label','Journey progress and playback');area.append(controls);
  const legend=document.querySelector('.legend'),heading=legend.querySelector('.legend-heading');
- const toggle=document.createElement('button');toggle.className='legend-toggle';toggle.setAttribute('aria-expanded','true');toggle.setAttribute('aria-controls','countryLegendBody');toggle.textContent='Hide countries −';heading.append(toggle);
- const body=document.createElement('div');body.id='countryLegendBody';while(heading.nextSibling)body.append(heading.nextSibling);legend.append(body);
+ const toggle=document.createElement('button');toggle.className='legend-toggle';toggle.setAttribute('aria-expanded','true');toggle.setAttribute('aria-controls','countryLegendBody');toggle.textContent='Show countries +';toggle.setAttribute('aria-expanded','false');heading.append(toggle);
+ const body=document.createElement('div');body.id='countryLegendBody';while(heading.nextSibling)body.append(heading.nextSibling);legend.append(body);body.hidden=true;
  toggle.onclick=()=>{body.hidden=!body.hidden;toggle.setAttribute('aria-expanded',String(!body.hidden));toggle.textContent=body.hidden?'Show countries +':'Hide countries −';layout();};
- let resizeFrame;
+ let resizeFrame,initialFrame=true;
  function layout(){cancelAnimationFrame(resizeFrame);resizeFrame=requestAnimationFrame(()=>{
   const mobile=matchMedia('(max-width:760px)').matches;
   const detail=!$('detailCard').hidden;
@@ -33,6 +33,7 @@ export function setupExperience(api){
   const bottom=state.story?mobile&&detail?area.clientHeight*.34+dockHeight+35:dockHeight+38:mobile&&detail?Math.max(area.clientHeight*.34+20,legend.offsetHeight+40):legend.offsetHeight+40;
   area.style.setProperty('--map-bottom',bottom+'px');
   state.map?.invalidateSize({pan:false});
+  if(initialFrame){initialFrame=false;if(!state.story&&!state.detail&&state.mode==='journeys')api.fitJourneyMap();}
  });}
  const layoutObserver=new ResizeObserver(layout);layoutObserver.observe(legend);layoutObserver.observe(controls);window.addEventListener('resize',layout);
  function stop(){playing=false;clearTimeout(timer);timer=null;arrivalAt=0;arrivalKey='';}

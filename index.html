@@ -10,11 +10,12 @@
   <link href="vendor/leaflet.css" rel="stylesheet">
   <link href="style.css" rel="stylesheet">
   <link href="fallback.css" rel="stylesheet">
-  <link href="atlas-theme.css?v=20261101-welcome-album" rel="stylesheet">
-  <link href="experience.css?v=20261101-welcome-album" rel="stylesheet">
+  <link href="atlas-theme.css?v=20261101-polish" rel="stylesheet">
+  <link href="experience.css?v=20261101-polish" rel="stylesheet">
+  <link href="polish.css?v=20261101-polish" rel="stylesheet">
   <script defer src="vendor/papaparse.min.js"></script>
   <script defer src="vendor/leaflet.js"></script>
-  <script type="module" src="app.js?v=20261101-welcome-album"></script>
+  <script type="module" src="app.js?v=20261101-polish"></script>
 </head>
 <body>
   <a class="skip-link" href="#sidebarContent">Skip to scholar information</a>
@@ -32,12 +33,12 @@
       <section class="sidebar-intro">
         <div class="eyebrow"><span class="small-line"></span> THE SCHOLAR COMMUNITY</div>
         <h1>Many roots.<br><em>One community.</em></h1>
-        <p>Our 2026 community across universities. Discover the people, countries and connections behind the Scholars Program.</p>
+        <p>Discover the people, places and journeys that connect our scholar community.</p>
       </section>
       <section class="filters" aria-label="Dataset filters">
         <label class="search-field"><span aria-hidden="true">⌕</span><input id="searchInput" type="search" placeholder="Find a scholar, town or country…" aria-label="Search scholars, towns and countries"><kbd>/</kbd></label>
         <div class="filter-row"><label><span>University</span><select id="universityFilter"><option value="">All universities</option></select></label><label><span>Cohort</span><select id="cohortFilter"><option value="">All cohorts</option></select></label></div>
-      <div class="explore-row"><label><span>Explore an interest</span><select id="interestFilter" aria-describedby="interestNote"><option value="">All study areas</option></select></label><button id="followScholar" class="button secondary">Follow a scholar ↗</button></div><p id="interestNote" class="interest-note">Matches use degree subjects, not confirmed personal interests.</p></section>
+      <div class="explore-row"><label><span>Explore a study area</span><select id="interestFilter" aria-describedby="interestNote"><option value="">All study areas</option></select></label><button id="followScholar" class="button secondary">Follow a scholar ↗</button></div><p id="interestNote" class="interest-note">Matches use degree subjects, not confirmed personal interests.</p></section>
       <section class="stats-grid" aria-label="Dataset summary">
         <div><strong id="totalStat">—</strong><span>Scholars featured</span></div><div><strong id="countryStat">—</strong><span>Countries represented</span></div><div><strong id="eligibleStat">54</strong><span>Countries in scope <button class="info-dot" id="eligibilityInfo" aria-label="Explain country eligibility scope">i</button></span></div><div><strong id="townStat">—</strong><span>Universities represented</span></div>
       </section>
